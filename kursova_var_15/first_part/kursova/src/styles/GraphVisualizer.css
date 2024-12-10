@@ -1,0 +1,95 @@
+.graph-visualizer {
+  border: 1px solid #ccc;
+  padding: 20px;
+  background: #fcfcfc;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1200px;
+  margin: 20px auto;
+  font-size: 18px;
+}
+
+.graph-visualizer h3 {
+  margin-top: 0;
+  text-align: center;
+  font-size: 22px; 
+}
+
+.graph-container {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  min-height: 400px;
+  position: relative;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  background: black;
+  height: 70px;
+  width: 120px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  font-size: 18px;
+}
+
+.controls button:hover {
+  background: #1e88e5;
+}
+
+.controls button:disabled {
+  background: #9e9e9e;
+  cursor: not-allowed;
+}
+
+.matrix-view {
+  margin-top: 20px;
+  overflow-x: auto;
+  font-size: 18px;
+}
+
+.matrix-view table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.matrix-view th, .matrix-view td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.topological-order, .scc-results {
+  margin-top: 20px;
+  background: #f7f7f7;
+  padding: 15px;
+  border-radius: 4px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 18px;
+}
+
+.node > text, .node > circle, .link {
+  transition: all 0.1 ease;
+}
